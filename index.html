@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- navbar -->
+     <nav>
+      <div class="logo">
+          <h1>COOKVENTORY</h1>
+      </div>
+      <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button class="join-button" href="#">Get Started</button></li>
+      </ul>
+  </nav>
+  <script src="nav.js"></script>
+  <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const links = document.querySelectorAll(".nav-links li");
+
+      hamburger.addEventListener('click', () => {
+          //Animate Links
+          navLinks.classList.toggle("open");
+          links.forEach(link => {
+              link.classList.toggle("fade");
+          });
+
+          //Hamburger Animation
+          hamburger.classList.toggle("toggle");
+      });
+  </script>
+
+  <!-- navbar -->
+    <!-- <div class="div-block-16">
+        <div class="w-layout-blockcontainer hero_h1-wrapper w-container">
+            <h1 data-w-id="a4648191-377b-353a-2c5a-0e7f04fa310c"
+                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+                class="hero_h1-white">Simplify Your Kitchen</h1>
+            <h1 data-w-id="b4a96d51-2e15-066e-db41-d99a57647f1a"
+                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;"
+                class="hero_h1-green"></h1>
+                <div class='container'>
+                  
+                    <div class='counters'>
+                      
+                      <div class='counter'>
+                        <span id='days'>NA</span>
+                        <p>Days</p>
+                      </div>
+                      
+                      <div class='counter'>
+                        <span id='hours'>NA</span>
+                        <p>Hours</p>
+                      </div>
+                      
+                      <div class='counter'>
+                        <span id='minutes'>NA</span>
+                        <p>Minutes</p>
+                      </div>
+                      
+                      <div class='counter'>
+                        <span id='seconds'>NA</span>
+                        <p>Seconds</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+        </div>
+        <div data-w-id="76749768-be19-9ca9-5140-3ef1d918152d" style="opacity: 1;"
+            class="w-layout-blockcontainer hero_text-wrapper w-container">
+
+            <a href="" class="button-primary w-button">SIGN UP FOR EARLY ACCESS</a>
+        </div>
+    </div> -->
+
+    <!-- <img src="image/heroimage.png" loading="eager" alt="Illustration of two people carrying a canoe in a mountainous landscape with pine trees, a river, and logs at sunset
+" class="scene-illustration-1">
+    <div class="w-layout-blockcontainer illustration-wrapper-copy w-container"><img
+            src="image/heroimage.png"
+            loading="eager" alt="Illustration of two people carrying a canoe in a mountainous landscape with pine trees, a river, and logs at sunset
+    " class="scene-illustration-1-mobile"></div> -->
+</body>
+
+</html>
